@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cf-yU-ikK">
-                                <rect key="frame" x="95" y="618" width="200" height="64"/>
+                                <rect key="frame" x="87.5" y="475" width="200" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="F5N-ek-sJB"/>
                                     <constraint firstAttribute="height" constant="64" id="Fjb-jc-M8H"/>
@@ -31,7 +31,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRr-93-ygf">
-                                <rect key="frame" x="95" y="714" width="200" height="64"/>
+                                <rect key="frame" x="87.5" y="571" width="200" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Md0-ag-de7"/>
                                     <constraint firstAttribute="height" constant="64" id="NWF-aZ-tND"/>
@@ -43,7 +43,7 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_logo" translatesAutoresizingMaskIntoConstraints="NO" id="iwO-Xd-QLp">
-                                <rect key="frame" x="8.6666666666666572" y="172" width="373" height="179"/>
+                                <rect key="frame" x="1" y="128" width="373" height="179"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -62,9 +62,92 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="64.955357142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Rpb-m1-chC">
+            <objects>
+                <viewController id="UIJ-vR-1zb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cpY-4Z-8hx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r56-iv-8b1">
+                                <rect key="frame" x="163" y="32" width="49" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-0J-QO5">
+                                <rect key="frame" x="-0.5" y="189" width="248" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="rck-lL-0su"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puD-rd-YQb">
+                                <rect key="frame" x="8.5" y="249" width="230" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="cbx-Fe-B5G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank" translatesAutoresizingMaskIntoConstraints="NO" id="hGb-mU-Q92">
+                                <rect key="frame" x="127.5" y="349" width="248" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="hTE-dg-gf5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fR2-QH-io5">
+                                <rect key="frame" x="87.5" y="571" width="200" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LsD-dD-Ly6"/>
+                                    <constraint firstAttribute="height" constant="64" id="XmQ-EW-Eln"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="答えを表示">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU1-bp-0qy">
+                                <rect key="frame" x="136.5" y="405" width="230" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="3PB-Kp-pR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YoC-W8-39u"/>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.60011248819999996" blue="0.1243796086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="puD-rd-YQb" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" constant="-64" id="8BL-M8-4Gu"/>
+                            <constraint firstItem="H8w-0J-QO5" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" constant="-64" id="8cs-mE-N7B"/>
+                            <constraint firstItem="puD-rd-YQb" firstAttribute="top" secondItem="r56-iv-8b1" secondAttribute="bottom" constant="188" id="D3C-f4-56P"/>
+                            <constraint firstItem="H8w-0J-QO5" firstAttribute="top" secondItem="r56-iv-8b1" secondAttribute="bottom" constant="128" id="Ffq-7B-hgG"/>
+                            <constraint firstItem="fR2-QH-io5" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" id="JVP-5P-jTi"/>
+                            <constraint firstItem="IU1-bp-0qy" firstAttribute="top" secondItem="H8w-0J-QO5" secondAttribute="bottom" constant="88" id="KNw-vd-5AY"/>
+                            <constraint firstItem="IU1-bp-0qy" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" constant="64" id="Nqc-U7-Efj"/>
+                            <constraint firstItem="hGb-mU-Q92" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" constant="64" id="Sgt-dN-u7w"/>
+                            <constraint firstItem="hGb-mU-Q92" firstAttribute="top" secondItem="H8w-0J-QO5" secondAttribute="bottom" constant="32" id="UvM-pW-ROE"/>
+                            <constraint firstItem="r56-iv-8b1" firstAttribute="top" secondItem="YoC-W8-39u" secondAttribute="top" constant="32" id="ZCA-jQ-qIX"/>
+                            <constraint firstItem="YoC-W8-39u" firstAttribute="bottom" secondItem="fR2-QH-io5" secondAttribute="bottom" constant="32" id="ZPl-3b-3iA"/>
+                            <constraint firstItem="r56-iv-8b1" firstAttribute="centerX" secondItem="cpY-4Z-8hx" secondAttribute="centerX" id="cNF-ka-5O4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-aT-WFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806.15384615384608" y="64.691943127962077"/>
+        </scene>
     </scenes>
     <resources>
         <image name="title_logo" width="373" height="179"/>
+        <image name="word_blank" width="336" height="128"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
