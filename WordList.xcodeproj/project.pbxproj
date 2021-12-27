@@ -15,8 +15,9 @@
 		EB6D39E127796749000A91DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6D39DF27796749000A91DD /* LaunchScreen.storyboard */; };
 		EB6D39E927798F40000A91DD /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39E827798F40000A91DD /* QuestionViewController.swift */; };
 		EB6D39EB27798F76000A91DD /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39EA27798F76000A91DD /* FinishViewController.swift */; };
-		EB6D39ED27798F9D000A91DD /* ListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39EC27798F9D000A91DD /* ListTableTableViewController.swift */; };
 		EB6D39EF27798FB2000A91DD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39EE27798FB2000A91DD /* AddViewController.swift */; };
+		EB6D39F327799DFF000A91DD /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39F227799DFF000A91DD /* ListTableViewController.swift */; };
+		EB6D39F72779A14F000A91DD /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D39F62779A14F000A91DD /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		EB6D39E227796749000A91DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB6D39E827798F40000A91DD /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		EB6D39EA27798F76000A91DD /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
-		EB6D39EC27798F9D000A91DD /* ListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableTableViewController.swift; sourceTree = "<group>"; };
 		EB6D39EE27798FB2000A91DD /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EB6D39F227799DFF000A91DD /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		EB6D39F62779A14F000A91DD /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +75,9 @@
 				EB6D39E227796749000A91DD /* Info.plist */,
 				EB6D39E827798F40000A91DD /* QuestionViewController.swift */,
 				EB6D39EA27798F76000A91DD /* FinishViewController.swift */,
-				EB6D39EC27798F9D000A91DD /* ListTableTableViewController.swift */,
 				EB6D39EE27798FB2000A91DD /* AddViewController.swift */,
+				EB6D39F227799DFF000A91DD /* ListTableViewController.swift */,
+				EB6D39F62779A14F000A91DD /* ListTableViewCell.swift */,
 			);
 			path = WordList;
 			sourceTree = "<group>";
@@ -151,12 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6D39EB27798F76000A91DD /* FinishViewController.swift in Sources */,
+				EB6D39F72779A14F000A91DD /* ListTableViewCell.swift in Sources */,
 				EB6D39D927796747000A91DD /* ViewController.swift in Sources */,
 				EB6D39EF27798FB2000A91DD /* AddViewController.swift in Sources */,
 				EB6D39D527796747000A91DD /* AppDelegate.swift in Sources */,
 				EB6D39E927798F40000A91DD /* QuestionViewController.swift in Sources */,
-				EB6D39ED27798F9D000A91DD /* ListTableTableViewController.swift in Sources */,
 				EB6D39D727796747000A91DD /* SceneDelegate.swift in Sources */,
+				EB6D39F327799DFF000A91DD /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
