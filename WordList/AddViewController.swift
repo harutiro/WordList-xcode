@@ -15,13 +15,15 @@ class AddViewController: UIViewController {
     var wordArray:[Dictionary<String,String>] = []
     
     let saveData = UserDefaults.standard
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if saveData.array(forKey: "WORD") != nil{
             wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String,String>]
         }
+        
+        
     }
     
     @IBAction func saveWord(){
@@ -47,5 +49,11 @@ class AddViewController: UIViewController {
         japaneseTextField.text = ""
     }
     
-
+    //キーボードを消すやつ
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    
 }
