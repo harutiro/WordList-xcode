@@ -9,9 +9,13 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
-    @IBOutlet var answerLabel: UILabel!
     @IBOutlet var questionLabel: UILabel!
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var questionButton1: UIButton!
+    @IBOutlet var questionButton2: UIButton!
+    @IBOutlet var questionButton3: UIButton!
+    @IBOutlet var questionButton4: UIButton!
+    @IBOutlet var Image:UIImageView!
+    @IBOutlet var nextButton:UIButton!
     
     var isAnswered: Bool = false
     var wordArray:[Dictionary<String,String>] = []
@@ -20,7 +24,6 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        answerLabel.text = ""
     }
     
     override func viewWillAppear(_ animated:Bool){
@@ -52,6 +55,10 @@ class QuestionViewController: UIViewController {
             isAnswered = true
             nextButton.setTitle("次へ", for: .normal)
         }
+    }
+    
+    @IBAction func nextQuestionButton(){
+        
     }
     
     
