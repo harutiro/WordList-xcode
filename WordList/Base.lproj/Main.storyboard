@@ -107,6 +107,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="questionActionButton1" destination="UIJ-vR-1zb" eventType="touchUpInside" id="3HZ-7D-0sO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6p-yk-X2v">
                                         <rect key="frame" x="0.0" y="61" width="343" height="45"/>
@@ -117,6 +120,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="questionActionButton2" destination="UIJ-vR-1zb" eventType="touchUpInside" id="1yX-Sq-FZJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stb-eN-JaF">
                                         <rect key="frame" x="0.0" y="122" width="343" height="45"/>
@@ -127,6 +133,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="questionActionButton3" destination="UIJ-vR-1zb" eventType="touchUpInside" id="djh-EW-5Y3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-Nv-oaj">
                                         <rect key="frame" x="0.0" y="183" width="343" height="45"/>
@@ -137,6 +146,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="questionActionButton4" destination="UIJ-vR-1zb" eventType="touchUpInside" id="caW-l8-Ig5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -251,6 +263,9 @@
                             <constraint firstItem="Wbs-hc-Ljb" firstAttribute="top" secondItem="Jvc-Jw-xM8" secondAttribute="bottom" constant="32" id="p83-oP-XMv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="Wbs-hc-Ljb" id="2rM-d1-MOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohh-MC-l9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="5O1-bC-9Vb" userLabel="Exit" sceneMemberID="exit"/>

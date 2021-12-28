@@ -8,9 +8,17 @@
 import UIKit
 
 class FinishViewController: UIViewController {
+    
+    var rightNumber = 0
+    
+    @IBOutlet var outputLabel:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        outputLabel.text = String(rightNumber) + "問せいかい"
+        
+        
 
         // Do any additional setup after loading the view.
     }

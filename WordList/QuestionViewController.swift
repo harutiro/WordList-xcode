@@ -21,12 +21,25 @@ class QuestionViewController: UIViewController {
     var wordArray:[Dictionary<String,String>] = []
     var nowNumber:Int = 0
     let saveData = UserDefaults.standard
+    var ansNumber:Int = 0
+    var rightNumber:Int = 0
     
+    
+    // ①セグエ実行前処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // ②Segueの識別子確認
+        if segue.identifier == "toFinishView" {
+            // ③遷移先ViewCntrollerの取得
+            let nextView = segue.destination as! FinishViewController
+            // ④値の設定
+            nextView.rightNumber = rightNumber
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Image.isHidden = true
-        nextButton.isHidden = false
+        nextButton.isHidden = true
         
     }
     
@@ -43,33 +56,55 @@ class QuestionViewController: UIViewController {
         
     }
     
-    @IBAction func nextButtonTapped(){
-        if isAnswered{
-            //            次の問題へ
-            nowNumber += 1
-            answerOutput()
-            
-            if nowNumber < wordArray.count{
-                //                次の問題を表示
-                questionLabel.text = wordArray[nowNumber]["english"]
-                isAnswered = false
-                nextButton.setTitle("答えを表示", for: .normal)
-            }else{
-                nowNumber = 0
-                performSegue(withIdentifier: "toFinishView", sender: nil)
-            }
-        }else{
-            
-            
-        }
+    @IBAction func questionActionButton1(){
+        ansCheck(num: 0)
+    }
+    
+    @IBAction func questionActionButton2(){
+        ansCheck(num: 1)
+    }
+    
+    @IBAction func questionActionButton3(){
+        ansCheck(num: 2)
+    }
+    
+    @IBAction func questionActionButton4(){
+        ansCheck(num: 3)
     }
     
     @IBAction func nextQuestionButton(){
-        //            答えを表示
-        isAnswered = true
-        nextButton.setTitle("次へ", for: .normal)
         
+        Image.isHidden = true
+        nextButton.isHidden = true
         
+        nowNumber += 1
+        
+        if nowNumber < wordArray.count{
+            //                次の問題を表示
+            questionLabel.text = wordArray[nowNumber]["english"]
+            answerOutput()
+        }else{
+            nowNumber = 0
+            performSegue(withIdentifier: "toFinishView", sender: nil)
+        }
+        
+    }
+    
+    func ansCheck(num:Int){
+        if num == ansNumber{
+            Image.isHidden = false
+            nextButton.isHidden = false
+            Image.image = UIImage(named: "true")
+            
+            rightNumber += 1
+            
+            print(rightNumber)
+            
+        }else{
+            Image.isHidden = false
+            nextButton.isHidden = false
+            Image.image = UIImage(named: "false")
+        }
     }
     
     func answerOutput(){
@@ -105,7 +140,9 @@ class QuestionViewController: UIViewController {
                 
                 print(answerArray)
                 
-                answerArray.insert(str, at: Int.random(in: 0..<4))
+                self.ansNumber = Int.random(in: 0..<4)
+                
+                answerArray.insert(str, at: self.ansNumber)
                 print("😩")
                 print(answerArray)
                 
@@ -125,7 +162,7 @@ class QuestionViewController: UIViewController {
         
         
         
-
+        
     }
     
     
