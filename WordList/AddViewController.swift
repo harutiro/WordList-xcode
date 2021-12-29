@@ -16,12 +16,21 @@ class AddViewController: UIViewController {
     
     let saveData = UserDefaults.standard
     
+    var editNum:Int! = -1
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if saveData.array(forKey: "WORD") != nil{
             wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String,String>]
         }
+        
+        if editNum != -1 {
+            englishTextField.text = wordArray[editNum]["english"]
+            japaneseTextField.text = wordArray[editNum]["japanese"]
+        }
+        
         
         
     }
@@ -30,7 +39,18 @@ class AddViewController: UIViewController {
         let wordDctionary =
         ["english":englishTextField.text! , "japanese":japaneseTextField.text!]
         
-        wordArray.append(wordDctionary)
+        if englishTextField.text == ""{return}
+        if japaneseTextField.text == ""{return}
+        
+        if editNum != -1{
+            wordArray.remove(at: editNum)
+            wordArray.insert(wordDctionary, at: editNum)
+            
+        }else{
+            wordArray.append(wordDctionary)
+        }
+        
+        
         saveData.set(wordArray ,forKey: "WORD")
         
         let alert = UIAlertController(
@@ -47,6 +67,10 @@ class AddViewController: UIViewController {
         
         englishTextField.text = ""
         japaneseTextField.text = ""
+        
+        if editNum != -1 {
+            editNum = -1
+        }
     }
     
     //キーボードを消すやつ

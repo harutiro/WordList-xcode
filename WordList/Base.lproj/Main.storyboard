@@ -333,7 +333,7 @@
                         <barButtonItem key="leftBarButtonItem" title="もどる" id="Xwq-9e-FEN"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6LL-iJ-iIK">
                             <connections>
-                                <segue destination="NuX-TS-qnA" kind="show" id="IQt-hn-1eI"/>
+                                <segue destination="NuX-TS-qnA" kind="show" identifier="toAddView" id="IQt-hn-1eI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

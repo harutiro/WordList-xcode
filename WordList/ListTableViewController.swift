@@ -12,6 +12,7 @@ class ListTableViewController: UITableViewController {
     var wordArray:[Dictionary<String,String>] = []
     
     let saveData = UserDefaults.standard
+    var goEditNum = -1
     
     //    高さの設定
     override func viewDidLoad() {
@@ -61,6 +62,20 @@ class ListTableViewController: UITableViewController {
         
         // タップされたセルの行番号を出力
         print("\(indexPath.row)番目の行が選択されました。")
+        goEditNum = indexPath.row
+        performSegue(withIdentifier: "toAddView", sender: nil)
+    }
+    
+    // ①セグエ実行前処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // ②Segueの識別子確認
+        if segue.identifier == "toAddView" {
+            // ③遷移先ViewCntrollerの取得
+            let nextView = segue.destination as! AddViewController
+            // ④値の設定
+            nextView.editNum = goEditNum
+            
+        }
     }
     
     
