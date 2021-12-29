@@ -46,6 +46,15 @@ class QuestionViewController: UIViewController {
         Image.isHidden = true
         nextButton.isHidden = true
         
+        questionButton1.layer.cornerRadius = 6
+        questionButton1.layer.masksToBounds = true
+        questionButton2.layer.cornerRadius = 6
+        questionButton2.layer.masksToBounds = true
+        questionButton3.layer.cornerRadius = 6
+        questionButton3.layer.masksToBounds = true
+        questionButton4.layer.cornerRadius = 6
+        questionButton4.layer.masksToBounds = true
+        
     }
     
     override func viewWillAppear(_ animated:Bool){
@@ -82,6 +91,18 @@ class QuestionViewController: UIViewController {
         Image.isHidden = true
         nextButton.isHidden = true
         
+        let rgba = UIColor(red: 48/255, green: 176/255, blue: 199/255, alpha: 1.0) // ボタン背景色設定
+        
+        if ansNumber == 0{
+            questionButton1.backgroundColor = rgba
+        }else if ansNumber == 1{
+            questionButton2.backgroundColor = rgba
+        }else if ansNumber == 2{
+            questionButton3.backgroundColor = rgba
+        }else if ansNumber == 3{
+            questionButton4.backgroundColor = rgba
+        }
+        
         nowNumber += 1
         
         if nowNumber < wordArray.count{
@@ -97,7 +118,17 @@ class QuestionViewController: UIViewController {
     
     func ansCheck(num:Int){
         
+        let rgba = UIColor(red: 252/255, green: 53/255, blue: 10/255, alpha: 1.0) // ボタン背景色設定
         
+        if ansNumber == 0{
+            questionButton1.backgroundColor = rgba
+        }else if ansNumber == 1{
+            questionButton2.backgroundColor = rgba
+        }else if ansNumber == 2{
+            questionButton3.backgroundColor = rgba
+        }else if ansNumber == 3{
+            questionButton4.backgroundColor = rgba
+        }
         
         
         if num == ansNumber{
