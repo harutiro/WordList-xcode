@@ -102,6 +102,10 @@ class QuestionViewController: UIViewController {
         }else if ansNumber == 3{
             questionButton4.backgroundColor = rgba
         }
+        questionButton1.isEnabled = true
+        questionButton2.isEnabled = true
+        questionButton3.isEnabled = true
+        questionButton4.isEnabled = true
         
         nowNumber += 1
         
@@ -118,18 +122,8 @@ class QuestionViewController: UIViewController {
     
     func ansCheck(num:Int){
         
-        let rgba = UIColor(red: 252/255, green: 53/255, blue: 10/255, alpha: 1.0) // ボタン背景色設定
         
-        if ansNumber == 0{
-            questionButton1.backgroundColor = rgba
-        }else if ansNumber == 1{
-            questionButton2.backgroundColor = rgba
-        }else if ansNumber == 2{
-            questionButton3.backgroundColor = rgba
-        }else if ansNumber == 3{
-            questionButton4.backgroundColor = rgba
-        }
-        
+        var rgba:UIColor!
         
         if num == ansNumber{
             Image.isHidden = false
@@ -143,6 +137,8 @@ class QuestionViewController: UIViewController {
             
             print(rightNumber)
             
+            rgba = UIColor(red: 64/255, green: 205/255, blue: 42/255, alpha: 1.0) //
+            
         }else{
             Image.isHidden = false
             nextButton.isHidden = false
@@ -150,7 +146,26 @@ class QuestionViewController: UIViewController {
             
             falseSoundPlayer.currentTime = 0
             falseSoundPlayer.play()
+            
+            rgba = UIColor(red: 252/255, green: 53/255, blue: 10/255, alpha: 1.0) //
         }
+        
+//         ボタン背景色設定
+        
+        if ansNumber == 0{
+            questionButton1.backgroundColor = rgba
+        }else if ansNumber == 1{
+            questionButton2.backgroundColor = rgba
+        }else if ansNumber == 2{
+            questionButton3.backgroundColor = rgba
+        }else if ansNumber == 3{
+            questionButton4.backgroundColor = rgba
+        }
+        
+        questionButton1.isEnabled = false
+        questionButton2.isEnabled = false
+        questionButton3.isEnabled = false
+        questionButton4.isEnabled = false
     }
     
     func answerOutput(){

@@ -46,8 +46,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "answerOutput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "answerOutput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "answerOutput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "answerOutput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "nextQuestionButton()"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,8 +378,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "ansCheck(num:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,8 +394,8 @@
             filePath = "WordList/QuestionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "ansCheck(num:)"
             landmarkType = "7">
          </BreakpointContent>
