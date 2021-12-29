@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QuestionViewController: UIViewController {
     
@@ -23,6 +24,10 @@ class QuestionViewController: UIViewController {
     let saveData = UserDefaults.standard
     var ansNumber:Int = 0
     var rightNumber:Int = 0
+    
+    let trueSoundPlayer = try! AVAudioPlayer(data:NSDataAsset(name:"trueSound")!.data,fileTypeHint: "mp3")
+    
+    let falseSoundPlayer = try! AVAudioPlayer(data:NSDataAsset(name:"falseSound")!.data,fileTypeHint: "mp3")
     
     
     // ①セグエ実行前処理
@@ -91,6 +96,10 @@ class QuestionViewController: UIViewController {
     }
     
     func ansCheck(num:Int){
+        
+        
+        
+        
         if num == ansNumber{
             Image.isHidden = false
             nextButton.isHidden = false
@@ -98,12 +107,18 @@ class QuestionViewController: UIViewController {
             
             rightNumber += 1
             
+            trueSoundPlayer.currentTime = 0
+            trueSoundPlayer.play()
+            
             print(rightNumber)
             
         }else{
             Image.isHidden = false
             nextButton.isHidden = false
             Image.image = UIImage(named: "false")
+            
+            falseSoundPlayer.currentTime = 0
+            falseSoundPlayer.play()
         }
     }
     
