@@ -181,7 +181,7 @@ class QuestionViewController: UIViewController {
             let data:[String]
         }
         
-        let jsonUrlString = String("http://127.0.0.1:5000/near?str=\(str.urlEncoded)&get_number=50")
+        let jsonUrlString = String("https://0110-152-70-80-176.jp.ngrok.io/near?str=\(str.urlEncoded)&get_number=50")
         
         guard let url = URL(string: jsonUrlString) else {return}
         
