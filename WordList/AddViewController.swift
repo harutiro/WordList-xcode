@@ -130,7 +130,7 @@ class AddViewController: UIViewController {
             let data:[String]
         }
         
-        let jsonUrlString = String("https://0110-152-70-80-176.jp.ngrok.io/near?str=\(str.urlEncoded)&get_number=50")
+        let jsonUrlString = String("http://152.70.80.176:5001/near?str=\(str.urlEncoded)&get_number=50")
         
         guard let url = URL(string: jsonUrlString) else {return}
         
